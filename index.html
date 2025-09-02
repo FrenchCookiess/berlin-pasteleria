@@ -5,11 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BERLÍN - Pastelería de Autor</title>
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Fuente elegante para el título BERLÍN -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Botón de compartir y menú desplegable -->
+  <div class="share-container">
+    <button id="shareBtn" class="share-btn" title="Compartir">
+      <!-- Flecha estilizada SVG -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0c356a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 2L11 13"></path>
+        <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+      </svg>
+    </button>
+    <div id="shareMenu" class="share-menu hidden">
+      <a href="#" id="shareWhatsapp" target="_blank">WhatsApp</a>
+      <a href="#" id="shareFacebook" target="_blank">Facebook</a>
+      <a href="#" id="shareInstagram" target="_blank">Instagram</a>
+    </div>
+  </div>
+
   <!-- Logo y título -->
   <header class="header">
     <img src="assets/logo.png" alt="Logo Berlín" class="logo">
@@ -20,39 +34,48 @@
   <!-- Botones principales -->
   <main class="main">
     <button id="menuBtn" class="btn primary">Menú BERLÍN ▼</button>
+    <a href="https://wa.me/573054433927" target="_blank" class="btn secondary">Contacto</a>
     <div id="menuContent" class="menu hidden">
-      <h2>Menú del día</h2>
-      <h3>Galletas Artesanales</h3>
-      <ul>
+      <h2>MENÚ DEL DÍA</h2>
+      <h3>GALLETAS ARTESANALES</h3>
+      <ul class="menu-list">
         <li>
-          <span class="product">Galleta de Vainilla con Chips de Chocolate Negro</span>
+          <span class="product">GALLETAS DE VAINILLA CON CHIPS DE CHOCOLATE NEGRO</span>
           <span class="price">$3.000</span>
-          <p class="weight">80 gramos</p>
+          <p class="weight">80 GRAMOS</p>
         </li>
         <li>
-          <span class="product">Galleta de Vainilla con Chips de Chocolate Blanco</span>
+          <span class="product">GALLETAS DE VAINILLA CON CHIPS DE CHOCOLATE BLANCO</span>
           <span class="price">$3.000</span>
-          <p class="weight">80 gramos</p>
+          <p class="weight">80 GRAMOS</p>
         </li>
         <li>
-          <span class="product">Galleta de Vainilla Rellena de Chocolate Negro</span>
+          <span class="product">GALLETAS DE VAINILLA RELLENA DE CHOCOLATE NEGRO</span>
           <span class="price">$3.500</span>
-          <p class="weight">90 gramos</p>
+          <p class="weight">90 GRAMOS</p>
         </li>
         <li>
-          <span class="product">Galleta de Vainilla Rellena de Chocolate Blanco</span>
+          <span class="product">GALLETAS DE VAINILLA RELLENA DE CHOCOLATE BLANCO</span>
           <span class="price">$3.500</span>
-          <p class="weight">90 gramos</p>
+          <p class="weight">90 GRAMOS</p>
         </li>
         <li>
-          <span class="product">Galleta de Oreo</span>
+          <span class="product">GALLETAS DE OREO</span>
           <span class="price">$3.000</span>
-          <p class="weight">80 gramos</p>
+          <p class="weight">80 GRAMOS</p>
+        </li>
+        <li>
+          <span class="product">PAQUETICO DE 5 GALLETAS DE VAINILLA CON CHIPS DE CHOCOLATE NEGRO</span>
+          <span class="price">$2.000</span>
+          <p class="weight">20 GRAMOS X GALLETA</p>
+        </li>
+        <li>
+          <span class="product">PAQUETICO DE 5 GALLETAS DE VAINILLA CON CHIPS DE CHOCOLATE BLANCO</span>
+          <span class="price">$2.000</span>
+          <p class="weight">20 GRAMOS X GALLETA</p>
         </li>
       </ul>
     </div>
-
-    <a href="https://wa.me/573054433927" target="_blank" class="btn secondary">Contacto</a>
   </main>
 
   <!-- Footer -->
