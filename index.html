@@ -5,8 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BERLÍN - Pastelería de Autor</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Fuente elegante para el título BERLÍN -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Librería de íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <!-- Botón de compartir arriba a la derecha -->
+  <div class="share-container">
+    <button id="shareBtn" class="share-btn">
+      <i class="fas fa-share-alt"></i>
+    </button>
+    <div id="shareMenu" class="share-menu hidden">
+      <a href="https://wa.me/?text=Visita%20mi%20web:%20https://TU_USUARIO.github.io/TU_REPO/" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://TU_USUARIO.github.io/TU_REPO/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/?url=https://TU_USUARIO.github.io/TU_REPO/" target="_blank">Instagram</a>
+    </div>
+  </div>
+
   <!-- Logo y título -->
   <header class="header">
     <img src="assets/logo.png" alt="Logo Berlín" class="logo">
