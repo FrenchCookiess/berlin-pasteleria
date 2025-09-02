@@ -8,6 +8,57 @@ body {
   color: #333;
 }
 
+/* Botón sofisticado de compartir */
+.share-container {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 100;
+}
+.share-btn {
+  background: #fff;
+  border: 2px solid #0c356a;
+  color: #0c356a;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.share-btn:hover {
+  background: #0c356a;
+  color: #fff;
+}
+.share-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 54px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 10px 0;
+  min-width: 140px;
+}
+.share-menu a {
+  font-family: 'Playfair Display', serif;
+  color: #0c356a;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.2s;
+  font-size: 1rem;
+}
+.share-menu a:hover {
+  background: #e5e7eb;
+}
+.share-menu.hidden {
+  display: none;
+}
+
 /* Logo y títulos */
 .header {
   margin-top: 40px;
@@ -67,11 +118,13 @@ body {
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
-  width: 350px;
+  width: 320px;
+  min-height: 600px;
   margin: 20px auto;
   padding: 20px;
   text-align: left;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Playfair Display', serif;
 }
 .menu.hidden {
   display: none;
@@ -79,12 +132,14 @@ body {
 .menu h2 {
   color: #0c356a;
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 .menu h3 {
   color: #0c356a;
   margin-bottom: 10px;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 5px;
+  font-family: 'Playfair Display', serif;
 }
 .menu ul {
   list-style: none;
@@ -94,17 +149,24 @@ body {
   margin-bottom: 15px;
 }
 .product {
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   display: inline-block;
   width: 70%;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  color: #2d2d2d;
 }
 .price {
+  font-family: 'Playfair Display', serif;
   color: #0c356a;
   font-weight: bold;
   float: right;
+  font-size: 1em;
 }
 .weight {
-  font-size: 0.9rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95em;
   color: #777;
   margin: 2px 0 0;
 }
