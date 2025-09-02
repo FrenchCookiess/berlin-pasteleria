@@ -22,6 +22,7 @@ body {
   color: #0c356a; /* azul corporativo */
   font-size: 2.5rem;
   margin: 10px 0 5px;
+  font-family: 'Playfair Display', serif; /* Fuente elegante solo para BERLÍN */
 }
 .subtitle {
   color: #777;
@@ -118,4 +119,45 @@ body {
 .footer .light {
   color: #777;
   font-size: 0.9rem;
+}
+
+/* Botón compartir */
+.share-container {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.share-btn {
+  background: #0c356a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.share-btn i {
+  font-size: 18px;
+}
+.share-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 150px;
+  text-align: left;
+}
+.share-menu a {
+  display: block;
+  padding: 8px 12px;
+  color: #0c356a;
+  text-decoration: none;
+  font-size: 14px;
+}
+.share-menu a:hover {
+  background: #f0f0f0;
 }
