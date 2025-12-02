@@ -6,9 +6,10 @@ body {
   text-align: center;
   background: #fff;
   color: #333;
+  overflow-x: hidden;
 }
 
-/* Botón sofisticado de compartir */
+/* Botón de compartir */
 .share-container {
   position: absolute;
   top: 30px;
@@ -17,8 +18,8 @@ body {
 }
 .share-btn {
   background: #fff;
-  border: 2px solid #0c356a;
-  color: #0c356a;
+  border: 2px solid #B02A2A;
+  color: #B02A2A;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -28,7 +29,7 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 .share-btn:hover {
-  background: #0c356a;
+  background: #B02A2A;
   color: #fff;
 }
 .share-menu {
@@ -46,7 +47,7 @@ body {
 }
 .share-menu a {
   font-family: 'Playfair Display', serif;
-  color: #0c356a;
+  color: #B02A2A;
   text-decoration: none;
   padding: 10px 20px;
   transition: background 0.2s;
@@ -70,10 +71,10 @@ body {
   object-fit: cover;
 }
 .title {
-  color: #0c356a; /* azul corporativo */
+  color: #B02A2A;
   font-size: 2.5rem;
   margin: 10px 0 5px;
-  font-family: 'Playfair Display', serif; /* Fuente elegante solo para BERLÍN */
+  font-family: 'Playfair Display', serif;
 }
 .subtitle {
   color: #777;
@@ -96,15 +97,15 @@ body {
   transition: 0.3s;
 }
 .primary {
-  background-color: #0c356a;
+  background-color: #B02A2A;
   color: #fff;
 }
 .primary:hover {
-  background-color: #09294d;
+  background-color: #8e1f1f;
 }
 .secondary {
   background-color: #e5e7eb;
-  color: #333;
+  color: #B02A2A;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -119,7 +120,6 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   width: 320px;
-  min-height: 600px;
   margin: 20px auto;
   padding: 20px;
   text-align: left;
@@ -130,12 +130,12 @@ body {
   display: none;
 }
 .menu h2 {
-  color: #0c356a;
+  color: #B02A2A;
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
 .menu h3 {
-  color: #0c356a;
+  color: #B02A2A;
   margin-bottom: 10px;
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 5px;
@@ -159,7 +159,7 @@ body {
 }
 .price {
   font-family: 'Playfair Display', serif;
-  color: #0c356a;
+  color: #B02A2A;
   font-weight: bold;
   float: right;
   font-size: 1em;
