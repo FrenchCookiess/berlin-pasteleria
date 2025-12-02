@@ -1,20 +1,20 @@
-// Mostrar u ocultar el menú de productos
+// --- Código para menús y compartir ---
 const menuBtn = document.getElementById("menuBtn");
 const menuContent = document.getElementById("menuContent");
+
 menuBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   menuContent.classList.toggle("hidden");
 });
 
-// Mostrar u ocultar el menú de compartir
 const shareBtn = document.getElementById("shareBtn");
 const shareMenu = document.getElementById("shareMenu");
+
 shareBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   shareMenu.classList.toggle("hidden");
 });
 
-// Cerrar menús al hacer clic fuera
 document.addEventListener("click", (e) => {
   if (!menuBtn.contains(e.target) && !menuContent.contains(e.target)) {
     menuContent.classList.add("hidden");
@@ -29,6 +29,7 @@ const pageUrl = encodeURIComponent(window.location.href);
 const whatsapp = document.getElementById('shareWhatsapp');
 const facebook = document.getElementById('shareFacebook');
 const instagram = document.getElementById('shareInstagram');
+
 if (whatsapp) whatsapp.href = `https://wa.me/?text=${pageUrl}`;
 if (facebook) facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
 if (instagram) instagram.href = `https://www.instagram.com/?url=${pageUrl}`;
